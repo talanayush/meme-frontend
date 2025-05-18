@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MemeGenerator() {
   // App flow states
+  const navigate = useNavigate();
   const [flow, setFlow] = useState("choice"); // 'choice', 'generate', 'upload', 'editor'
   
   // Generation states
