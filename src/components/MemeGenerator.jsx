@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from 'react-router-dom';
 
 export default function MemeGenerator() {
   // App flow states
@@ -215,10 +216,10 @@ export default function MemeGenerator() {
             Meme Generator
           </motion.h1>
           <motion.h1
-            onClick={() => window.location.href = '/community'}
+            onClick={() => navigate('/community')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-4 text-2xl font-bold bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-2 rounded-full hover:shadow-md transition-all"
+            className="mt-4 text-2xl font-bold bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-2 rounded-full hover:shadow-md transition-all cursor-pointer"
           >
             Explore Community Creations →
           </motion.h1>
